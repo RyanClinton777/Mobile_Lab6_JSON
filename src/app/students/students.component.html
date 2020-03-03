@@ -1,0 +1,14 @@
+<p>students works!</p>
+
+<!-- Display students -->
+<ul> <!-- ul = Unordered List -->
+    <!-- This is a foreach loop, student is current item and studentData is array. -->
+    <li *ngFor="let student of studentData"> <!-- li = List Item -->
+        <!-- double curley brackets for data-binding-->
+        <!-- accessing attributes of student -->
+        {{student.id}},
+        {{student.name}},
+        {{student.course}},
+        {{student.address}}
+    </li>
+</ul>
